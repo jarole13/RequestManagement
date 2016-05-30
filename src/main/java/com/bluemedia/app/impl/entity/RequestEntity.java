@@ -40,15 +40,15 @@ public class RequestEntity implements Serializable {
 	private Long id;
 
 	@NotNull
-	@Column(name = "NAME")
+	@Column(name = "NAME", nullable=false)
 	private String name;
 
 	@NotNull
-	@Column(name = "CONTENT")
+	@Column(name = "CONTENT", nullable=false)
 	private String content;
 
 	@NotNull
-	@Column(name = "STATUS")
+	@Column(name = "STATUS", nullable=false)
 	@Convert(converter = RequestStatusConverter.class)
 	private RequestStatus status;
 
