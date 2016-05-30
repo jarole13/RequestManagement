@@ -28,6 +28,7 @@ import com.sun.istack.NotNull;
 
 @Entity
 @Table(name = "REQUEST")
+@ReasonValidity
 @StatusValidity
 @ContentChangeAllowedValiditiy
 public class RequestEntity implements Serializable {
